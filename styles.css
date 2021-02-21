@@ -1,0 +1,12 @@
+.container {
+  height: 500px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+button[type="button"] {
+  display: block;
+  width: 100px;
+  height: 50px;
+}
