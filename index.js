@@ -10,6 +10,7 @@ const colors = [
 const startBtnRef = document.querySelector('[data-action="start"]');
 const stopBtnRef = document.querySelector('[data-action="stop"]');
 const bodyRef = document.querySelector('body');
+let timer = null;
 
 const randomIntegerFromInterval = (min, max) => {
     return Math.floor(Math.random() * (max - min + 1) + min);
@@ -27,6 +28,7 @@ function timerHandler(event) {
             break;
         case 'stop':
             startBtnRef.disabled = false;
+            console.log('stop');
             clearInterval(timer);
             break;
     }
